@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau Cours</title>
+    <link rel="stylesheet" href="../assets/styles/RH-ajouter-cour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="top-bar">
+        <a href="RH-mescours.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            <span>Retour</span>
+        </a>
+    </header>
+
+
+
+    <main>
+        <section class="form-section">
+            <h1>Nouveau cours</h1>
+            <br>
+            <p>Ajouter les informations de cours</p>
+            
+            <form>
+                <label for="course-name">Nom du cours</label>
+                <input type="text" id="course-name" placeholder="Nom du cours">
+
+                <label for="course-image">Photo du cours</label>
+                <input type="file" id="course-image" accept="image/*">
+
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Description"></textarea>
+
+                <h3>Télécharger le matériel de cours</h3>
+                
+                <label for="pdf">PDF</label>
+                <input type="file" id="pdf" accept=".pdf">
+
+                <label for="record">Record du cours (optionnel)</label>
+                <input type="file" id="record" accept="audio/*,video/*">
+
+                <label for="links">Liens</label>
+                <input type="url" id="links" placeholder="Liens externes">
+
+                <label for="quiz-link">Lien du quiz</label>
+                <input type="url" id="quiz-link" placeholder="Lien du quiz">
+
+                <h3>Sélectionner le Département et le domaine du cours</h3>
+
+                <label for="department">Département</label>
+                <select id="department">
+                    <option value="">Sélectionner</option>
+                    <option value="IT">IT Department</option>
+                    <option value="RH">Human Resources</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Network">Network</option>
+                    <option value="legal">Legal & Compliance</option>
+                    <option value="business">Business Development</option>
+                    <option value="underwriting">Underwriting</option>
+                    <option value="claims">Claims</option>
+                    <option value="reinsurance">Reinsurance</option>
+                    <option value="finance">Finance & Accounting</option>
+                    <option value="quality">Quality & Internal Control</option>
+                    <option value="executive">Executive Management</option>
+                </select>
+
+                
+
+                <div class="button-group">
+                    <button type="reset" class="cancel">Annuler</button>
+                    <button type="submit" class="submit">Ajouter</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+<script src="../scripts/RH-ajouter-cour.js"></script>
+</body>
+</html>
